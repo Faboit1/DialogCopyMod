@@ -1,0 +1,8 @@
+{
+  "dialogcopy.button.copy": "Copy JSON",
+  "dialogcopy.button.copy.tooltip": "Copy this dialog's JSON to your clipboard",
+  "dialogcopy.toast.copied": "Dialog JSON copied",
+  "dialogcopy.toast.copied.description": "The JSON is on your clipboard.",
+  "dialogcopy.toast.failed": "Copy failed",
+  "dialogcopy.toast.no_dialog": "This screen has no dialog attached."
+}
