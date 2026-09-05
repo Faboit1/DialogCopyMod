@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "dialogcopy",
+  "version": "${version}",
+  "name": "DialogCopyMod",
+  "description": "Adds a 'Copy JSON' button to the top right of every Minecraft dialog screen (1.21.6+ dialogs), copying the dialog's JSON straight to your clipboard.",
+  "authors": [
+    "Faboit1"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Faboit1/DialogCopyMod",
+    "sources": "https://github.com/Faboit1/DialogCopyMod",
+    "issues": "https://github.com/Faboit1/DialogCopyMod/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/dialogcopy/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.faboit.dialogcopy.client.DialogCopyModClient"
+    ]
+  },
+  "mixins": [
+    "dialogcopy.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
