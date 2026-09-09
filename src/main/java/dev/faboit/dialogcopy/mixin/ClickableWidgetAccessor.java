@@ -1,0 +1,13 @@
+package dev.faboit.dialogcopy.mixin;
+
+import net.minecraft.client.gui.tooltip.TooltipState;
+import net.minecraft.client.gui.widget.ClickableWidget;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.gen.Accessor;
+
+/** Reaches the tooltip a widget already carries, so we append to it instead of replacing it. */
+@Mixin(ClickableWidget.class)
+public interface ClickableWidgetAccessor {
+	@Accessor("tooltip")
+	TooltipState dialogcopy$getTooltipState();
+}

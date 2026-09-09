@@ -3,7 +3,13 @@
   "package": "dev.faboit.dialogcopy.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "DialogScreenAccessor"
+    "ButtonWidgetBuilderMixin",
+    "ButtonWidgetMixin",
+    "ClickableWidgetAccessor",
+    "DialogControlsMixin",
+    "DialogScreenAccessor",
+    "ParsedTemplateAccessor",
+    "TooltipAccessor"
   ],
   "injectors": {
     "defaultRequire": 1
