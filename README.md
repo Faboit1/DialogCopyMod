@@ -11,6 +11,31 @@ authoring dialogs yourself and want to snapshot what the client actually receive
 
 ## Features
 
+### Hover any element to see what it does
+
+Every button and input in a dialog gets a detail block under its tooltip, so you can tell what a
+dialog will do before you click it:
+
+```
+A plain button                    <- the dialog author's own tooltip, kept
+
+Runs command: say static hello
+After: close
+```
+
+- **Action buttons** show the command they will run (or the URL, dialog, clipboard text, page or
+  custom action id they will trigger), plus what happens to the dialog afterwards.
+- **Dynamic commands** are shown *resolved against the inputs as they stand right now* — type a
+  different name and the command in the tooltip changes with it — with the raw template underneath
+  so you can see which inputs feed it.
+- **Custom actions** show their id and the payload that would be sent.
+- **Inputs** show their key, type and constraints: initial value, max length, option ids, range and
+  step — the things a datapack author needs and a player never sees.
+
+Whatever tooltip the dialog author wrote is kept, with the details hung underneath it.
+
+### Copy the whole dialog
+
 - Adds a **Copy JSON** button to the top right of every `DialogScreen` (notice, confirmation,
   multi-action, dialog list, server links and custom dialog types).
 - Copies the dialog re-encoded through vanilla's own `Dialog` codec, so the output round-trips
